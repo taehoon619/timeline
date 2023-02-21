@@ -1,7 +1,15 @@
-.dateLine {
+.dateBoxContainer {
   position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
   cursor: default;
+}
+
+.dateBgLine {
+  position: absolute;
+  left: 153.847px;
+  width: 80px;
+  height: 100%;
+  background: rgb(247, 247, 247);
 }
