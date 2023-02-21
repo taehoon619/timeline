@@ -1,0 +1,187 @@
+.container {
+  position: relative;
+  float: left;
+  min-width: 100%;
+  width: 9559px;
+  background: rgb(253, 253, 253);
+  border-bottom: 1px solid rgb(233, 233, 231);
+  height: 204px;
+}
+
+.timeLineHeader {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  background: white;
+  border-top: 1px solid rgb(233, 233, 231);
+  border-bottom: 1px solid rgb(233, 233, 231);
+}
+
+.timeLineDate {
+  position: sticky;
+  left: 0px;
+  width: 615px;
+  z-index: 2;
+  height: 0px;
+}
+
+.dateTextWrap {
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding-top: 6px;
+  background: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dateIcon {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  height: 22px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.2;
+  min-width: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: rgb(55, 53, 47);
+  margin-left: 2px;
+  margin-right: 4px;
+  margin-top: 1px;
+  fill: rgba(55, 53, 47, 0.35);
+}
+
+.TimelineBox {
+  width: 30px;
+  margin-right: -30px;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    white 20%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.timeLineDayWrap {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  padding-right: 8px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding-top: 7px;
+  background: white;
+}
+
+.monthBox {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  height: 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.2;
+  min-width: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: rgba(55, 53, 47, 0.65);
+}
+
+.downArrowIcon {
+  width: 10px;
+  height: 100%;
+  display: block;
+  fill: rgba(55, 53, 47, 0.45);
+  flex-shrink: 0;
+  backface-visibility: hidden;
+  margin-left: 4px;
+}
+
+.leftIconBox {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  height: 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.2;
+  min-width: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: rgba(55, 53, 47, 0.65);
+  margin-left: 4px;
+}
+
+.leftArrowIcon {
+  width: 12px;
+  height: 100%;
+  display: block;
+  fill: rgba(55, 53, 47, 0.45);
+  flex-shrink: 0;
+  backface-visibility: hidden;
+}
+
+.toDayBox {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  height: 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.2;
+  min-width: 0px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: rgb(55, 53, 47);
+}
+
+.rightIconBox {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  height: 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.2;
+  min-width: 0px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: rgba(55, 53, 47, 0.65);
+}
+
+.rightArrowIcon {
+  width: 12px;
+  height: 100%;
+  display: block;
+  fill: rgba(55, 53, 47, 0.45);
+  flex-shrink: 0;
+  backface-visibility: hidden;
+}
