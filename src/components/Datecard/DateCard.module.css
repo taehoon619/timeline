@@ -1,0 +1,25 @@
+.container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  background: white;
+  border-top: 1px solid rgb(233, 233, 231);
+  border-bottom: 1px solid rgb(233, 233, 231);
+}
+
+.dateBoxWrap {
+  height: 32px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dateLine {
+  position: absolute;
+  left: 5065.5px;
+  top: 60px;
+  width: 7px;
+  height: 7px;
+  background: rgb(211, 79, 67);
+  border-radius: 100%;
+}
