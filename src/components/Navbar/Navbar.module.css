@@ -5,6 +5,17 @@
   display: flex;
   align-items: center;
   position: sticky;
+  z-index: 1;
+}
+
+.timeLineTextWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 0.3rem;
+  z-index: 1;
 }
 
 .timeLineText {
@@ -12,9 +23,87 @@
   display: flex;
   align-items: center;
   flex-grow: 1;
-  gap: 0.3rem;
+}
+
+.timeLine {
+  display: inline-flex;
+  margin: 0px;
+  height: 100%;
 }
 
 .timeLineView {
   display: flex;
+  align-items: center;
+  background: none;
+  height: 100%;
+  border-bottom: 2px solid rgb(55, 53, 47);
+  padding-top: 2px;
+}
+
+.timeLineBox {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  height: 28px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.2;
+  min-width: 0px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: rgb(55, 53, 47);
+  font-weight: 500;
+  max-width: 220px;
+}
+
+.timeLineBox:hover {
+  background-color: rgba(55, 53, 47, 0.08);
+}
+
+.timeLineIcon {
+  width: 16px;
+  height: 16px;
+  display: block;
+  fill: rgb(55, 53, 47);
+  flex-shrink: 0;
+  margin-right: 6px;
+}
+
+.lineText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 1px;
+}
+
+.contentPlusIcon {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 3px;
+  height: 24px;
+  width: 24px;
+  padding: 0px;
+  /* opacity: 0; */
+}
+
+.contentPlusIcon:hover {
+  background-color: rgba(55, 53, 47, 0.08);
+}
+
+.contentPlus {
+  width: 14px;
+  height: 14px;
+  display: block;
+  fill: rgba(55, 53, 47, 0.45);
+  flex-shrink: 0;
+  backface-visibility: hidden;
 }
