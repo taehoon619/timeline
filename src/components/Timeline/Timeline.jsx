@@ -12,13 +12,13 @@ export default function Timeline() {
   const [arrowHover, setArrowHover] = useState(false);
 
   const lineArrowHover = (e) => {
-    e.preventDefault();
-    setTimeout(() => setArrowHover(true), 800);
+    setArrowHover(true);
+    // setTimeout(() => setArrowHover(true), 800);
   };
 
   const clearHover = () => {
     setArrowHover(false);
-    clearTimeout(lineArrowHover);
+    // clearTimeout(lineArrowHover);
   };
 
   return (
@@ -31,7 +31,7 @@ export default function Timeline() {
         <div className={styles.timeLineDate}>
           <div className={styles.dateTextWrap}>
             <div
-              onMouseEnter={lineArrowHover}
+              onMouseOver={lineArrowHover}
               onMouseOut={clearHover}
               className={styles.dateIconBox}
             >

@@ -11,7 +11,8 @@ export default function Navbar() {
   const [datHover, setDotHover] = useState(false);
 
   const timeLineHover = () => {
-    setTimeout(() => setTimeHover(true), 800);
+    setTimeHover(true);
+    // setTimeout(() => setTimeHover(true), 800);
   };
 
   const menuArrowHover = () => {
@@ -26,7 +27,7 @@ export default function Navbar() {
 
   const clearTimeHover = () => {
     setTimeHover(false);
-    clearTimeout(timeLineHover);
+    // clearTimeout(timeLineHover);
   };
 
   const clearArrowHover = () => {
@@ -46,7 +47,7 @@ export default function Navbar() {
           <div className={styles.timeLine}>
             <div className={styles.timeLineView}>
               <div
-                onMouseEnter={timeLineHover}
+                onMouseOver={timeLineHover}
                 onMouseOut={clearTimeHover}
                 className={styles.timeLineBox}
               >
