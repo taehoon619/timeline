@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   flex-grow: 1;
-  gap: 0.3rem;
+  /* gap: 0.3rem; */
   z-index: 1;
 }
 
@@ -106,4 +106,162 @@
   fill: rgba(55, 53, 47, 0.45);
   flex-shrink: 0;
   backface-visibility: hidden;
+}
+
+/* 메뉴바 시작 */
+.menuBar {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  /* opacity: 0; */
+}
+
+.filter {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+  height: 28px;
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 1;
+  min-width: 0px;
+  padding: 6px;
+  color: rgba(55, 53, 47, 0.65);
+  font-weight: 400;
+}
+
+.filter:hover {
+  background-color: rgba(55, 53, 47, 0.08);
+}
+
+.iconsWrap {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 3px;
+  height: 28px;
+  width: 28px;
+  padding: 6px;
+  font-size: 14px;
+  color: rgba(55, 53, 47, 0.65);
+  fill: rgba(55, 53, 47, 0.45);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.iconsWrap:hover {
+  background-color: rgba(55, 53, 47, 0.08);
+}
+
+.arrowWrap {
+  display: block;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+.searchIcon {
+  width: 14px;
+  display: block;
+  fill: rgba(55, 53, 47, 0.65);
+  flex-shrink: 0;
+  backface-visibility: hidden;
+}
+
+.arrowIcon {
+  width: 16px;
+  height: 14px;
+  display: block;
+  fill: rgba(55, 53, 47, 0.65);
+  flex-shrink: 0;
+  backface-visibility: hidden;
+}
+
+.dotIcons {
+  height: 14px;
+  display: block;
+  fill: rgba(55, 53, 47, 0.65);
+  flex-shrink: 0;
+  backface-visibility: hidden;
+}
+
+.newMadeWrap {
+  position: relative;
+  display: inline-flex;
+  flex-shrink: 0;
+  border-radius: 3px;
+  overflow: hidden;
+  height: 28px;
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.newMade {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  line-height: 1.1;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: 500;
+  background: rgb(35, 131, 226);
+  color: white;
+}
+
+.newMade:hover {
+  background-color: rgb(0, 117, 211);
+}
+
+.arrowDown {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  align-self: stretch;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: rgb(35, 131, 226);
+  color: white;
+  box-shadow: rgb(55 53 47 / 16%) 1px 0px 0px inset;
+}
+
+.arrowDown:hover {
+  background-color: rgb(0, 117, 211);
+}
+
+.arrowDownIcon {
+  width: 10px;
+  height: 100%;
+  display: block;
+  fill: white;
+  flex-shrink: 0;
+  backface-visibility: hidden;
+  margin-top: 2px;
+}
+
+.newMadeWhole {
+  position: absolute;
+  pointer-events: none;
+  border-radius: 3px;
+  inset: 0px;
+  box-shadow: rgb(15 15 15 / 10%) 0px 0px 0px 1px inset,
+    rgb(15 15 15 / 10%) 0px 1px 2px;
 }

@@ -18,8 +18,8 @@ export default function Timeline() {
       <div className={styles.timeLineHeader}>
         <div className={styles.timeLineDate}>
           <div className={styles.dateTextWrap}>
-            <div className={styles.dateIcon}>
-              <RxDoubleArrowRight />
+            <div className={styles.dateIconBox}>
+              <RxDoubleArrowRight className={styles.dateIcon} />
             </div>
             <span>2023년 2월</span>
             <div className={styles.TimelineBox}></div>
