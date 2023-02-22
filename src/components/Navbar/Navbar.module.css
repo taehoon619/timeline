@@ -27,6 +27,7 @@
 
 .timeLine {
   display: inline-flex;
+  flex-direction: column;
   margin: 0px;
   height: 100%;
 }
@@ -78,6 +79,28 @@
   overflow: hidden;
   text-overflow: ellipsis;
   margin-top: 1px;
+}
+
+.timeLineHoverBox {
+  position: relative;
+  z-index: 100;
+}
+
+.timeLineHover {
+  width: 80px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  z-index: 9999;
 }
 
 .contentPlusIcon {
@@ -177,6 +200,23 @@
   backface-visibility: hidden;
 }
 
+.arrowHover {
+  width: 100px;
+  height: 25px;
+  color: white;
+  background-color: black;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+  left: -35px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+  z-index: 9999;
+}
+
 .arrowIcon {
   width: 16px;
   height: 14px;
@@ -184,6 +224,23 @@
   fill: rgba(55, 53, 47, 0.65);
   flex-shrink: 0;
   backface-visibility: hidden;
+}
+
+.dotHover {
+  width: 150px;
+  height: 25px;
+  color: white;
+  background-color: black;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -42px;
+  left: -63px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+  z-index: 9999;
 }
 
 .dotIcons {

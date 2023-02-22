@@ -22,7 +22,8 @@
   position: sticky;
   left: 0px;
   width: 634px;
-  z-index: 2;
+  z-index: 0;
+  /* 모달 창 안보여서 z-index 0으로 바꿈.. */
   height: 0px;
 }
 
@@ -38,6 +39,7 @@
   background: white;
   font-size: 14px;
   font-weight: 500;
+  z-index: 5;
 }
 
 .dateIconBox {
@@ -64,6 +66,28 @@
 
 .dateIconBox:hover {
   background-color: rgba(55, 53, 47, 0.08);
+}
+
+.arrowHoverBox {
+  position: relative;
+  z-index: 9999;
+}
+
+.arrowHover {
+  width: 40px;
+  height: 20px;
+  color: white;
+  background-color: black;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+  left: -5px;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.2rem;
+  z-index: 9999;
 }
 
 .dateIcon {

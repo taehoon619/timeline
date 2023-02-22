@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Timeline.module.css";
 import { RxDoubleArrowRight } from "react-icons/rx";
 import {
@@ -9,6 +9,18 @@ import {
 import Datebox from "../Datebox/Datebox";
 
 export default function Timeline() {
+  const [arrowHover, setArrowHover] = useState(false);
+
+  const lineArrowHover = (e) => {
+    e.preventDefault();
+    setTimeout(() => setArrowHover(true), 800);
+  };
+
+  const clearHover = () => {
+    setArrowHover(false);
+    clearTimeout(lineArrowHover);
+  };
+
   return (
     <div className={styles.container}>
       <div>
@@ -18,7 +30,14 @@ export default function Timeline() {
       <div className={styles.timeLineHeader}>
         <div className={styles.timeLineDate}>
           <div className={styles.dateTextWrap}>
-            <div className={styles.dateIconBox}>
+            <div
+              onMouseEnter={lineArrowHover}
+              onMouseOut={clearHover}
+              className={styles.dateIconBox}
+            >
+              <div className={styles.arrowHoverBox}>
+                {arrowHover && <div className={styles.arrowHover}>표 보기</div>}
+              </div>
               <RxDoubleArrowRight className={styles.dateIcon} />
             </div>
             <span>2023년 2월</span>
