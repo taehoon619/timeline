@@ -4,42 +4,27 @@ import { AiOutlinePlus, AiOutlineSearch } from "react-icons/ai";
 import { TbArrowsDiagonal2, TbDots } from "react-icons/tb";
 import { RiArrowDownSLine } from "react-icons/ri";
 import styles from "./Navbar.module.css";
+import useHoverModal from "../../hooks/useHoverModal";
 
 export default function Navbar() {
-  const [timeHover, setTimeHover] = useState(false);
-  const [arrowHover, setArrowHover] = useState(false);
-  const [datHover, setDotHover] = useState(false);
+  const [
+    timeHover,
+    arrowHover,
+    datHover,
+    timeLineHover,
+    menuArrowHover,
+    menuDotHover,
+    clearTimeHover,
+    clearArrowHover,
+    clearDotHover,
+  ] = useHoverModal();
 
-  const timeLineHover = () => {
-    setTimeHover(true);
-    // setTimeout(() => setTimeHover(true), 800);
+  const [search, setSearch] = useState(false);
+
+  const onClickModal = () => {
+    setSearch(!search);
   };
 
-  const menuArrowHover = () => {
-    setArrowHover(true);
-    // setTimeout(() => setArrowHover(true), 800);
-  };
-
-  const menuDotHover = () => {
-    setDotHover(true);
-    // setTimeout(() => setDotHover(true), 800);
-  };
-
-  const clearTimeHover = () => {
-    setTimeHover(false);
-    // clearTimeout(timeLineHover);
-  };
-
-  const clearArrowHover = () => {
-    setArrowHover(false);
-    // clearTimeout(menuArrowHover);
-  };
-
-  const clearDotHover = () => {
-    setDotHover(false);
-    // clearTimeout(menuDotHover);
-  };
-  console.log(timeHover);
   return (
     <div className={styles.container}>
       <div className={styles.timeLineTextWrap}>
