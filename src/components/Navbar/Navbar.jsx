@@ -5,6 +5,7 @@ import { TbArrowsDiagonal2, TbDots } from "react-icons/tb";
 import { RiArrowDownSLine } from "react-icons/ri";
 import styles from "./Navbar.module.css";
 import useHoverModal from "../../hooks/useHoverModal";
+import Search from "../Search/Search";
 
 export default function Navbar() {
   const [
@@ -21,8 +22,8 @@ export default function Navbar() {
 
   const [search, setSearch] = useState(false);
 
-  const onClickModal = () => {
-    setSearch(!search);
+  const onClickSearch = () => {
+    setSearch(true);
   };
 
   return (
@@ -59,8 +60,9 @@ export default function Navbar() {
         <div className={styles.filter}>날짜 없음(1)</div>
         <div className={styles.filter}>필터</div>
         <div className={styles.filter}>정렬</div>
-        <div className={styles.iconsWrap}>
+        <div className={styles.iconsWrap} onClick={onClickSearch}>
           <AiOutlineSearch className={styles.searchIcon} />
+          {search && <Search setSearch={setSearch} search={search} />}
         </div>
         <div
           onMouseOver={menuArrowHover}

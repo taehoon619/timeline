@@ -1,0 +1,53 @@
+.searchBarContainer {
+  width: 145px;
+  opacity: 1;
+}
+
+.searchBarWrap {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0px 4px 0px 0px;
+  width: 100%;
+  background: transparent;
+  font-size: 14px;
+  line-height: 1;
+  color: rgb(55, 53, 47);
+  margin-bottom: 1px;
+}
+
+.search {
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  background: none;
+  width: 100%;
+  display: block;
+  resize: none;
+  padding: 0px;
+}
+
+.searchBarIcon {
+  user-select: none;
+  transition: background 20ms ease-in 0s;
+  cursor: pointer;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 20px;
+  margin-left: 4px;
+}
+
+.searchCloseIcon {
+  width: 14px;
+  height: 14px;
+  display: block;
+  fill: rgba(55, 53, 47, 0.35);
+  flex-shrink: 0;
+  backface-visibility: hidden;
+}
