@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import styles from "./Timeline.module.css";
-import { RxDoubleArrowRight } from "react-icons/rx";
+import React, { useState } from 'react';
+import styles from './Timeline.module.scss';
+import { RxDoubleArrowRight } from 'react-icons/rx';
 import {
   RiArrowDownSLine,
   RiArrowLeftSLine,
   RiArrowRightSLine,
-} from "react-icons/ri";
-import Datebox from "../Datebox/Datebox";
+} from 'react-icons/ri';
+import Datebox from '../Datebox/Datebox';
 
 export default function Timeline() {
   const [arrowHover, setArrowHover] = useState(false);

@@ -1,7 +1,7 @@
 import React from "react";
 import Calendar from "../Calendar/Calendar";
 import Navbar from "../Navbar/Navbar";
-import styles from "./Main.module.css";
+import styles from "./Main.module.scss";
 
 export default function Main() {
   return (

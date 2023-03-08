@@ -1,7 +1,7 @@
-import React from "react";
-import Cardbox from "../Cardbox/Cardbox";
-import Datecard from "../Datecard/Datecard";
-import styles from "./Datebox.module.css";
+import React from 'react';
+import Cardbox from '../Cardbox/Cardbox';
+import Datecard from '../Datecard/Datecard';
+import styles from './Datebox.module.scss';
 
 export default function Datebox() {
   return (

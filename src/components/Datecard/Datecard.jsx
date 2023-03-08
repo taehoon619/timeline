@@ -1,5 +1,5 @@
-import React from "react";
-import styles from "./Datecard.module.css";
+import React from 'react';
+import styles from './Datecard.module.scss';
 
 export default function Datecard() {
   return (

@@ -1,0 +1,15 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  .calendarWarp {
+    width: 730px;
+    height: 400px;
+    background-color: white;
+    padding: 2rem 3rem;
+  }
+}

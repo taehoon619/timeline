@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { CiViewTimeline } from "react-icons/ci";
-import { AiOutlinePlus, AiOutlineSearch } from "react-icons/ai";
-import { TbArrowsDiagonal2, TbDots } from "react-icons/tb";
-import { RiArrowDownSLine } from "react-icons/ri";
-import styles from "./Navbar.module.css";
-import useHoverModal from "../../hooks/useHoverModal";
-import Search from "../Search/Search";
+import React, { useState } from 'react';
+import { CiViewTimeline } from 'react-icons/ci';
+import { AiOutlinePlus, AiOutlineSearch } from 'react-icons/ai';
+import { TbArrowsDiagonal2, TbDots } from 'react-icons/tb';
+import { RiArrowDownSLine } from 'react-icons/ri';
+import styles from './Navbar.module.scss';
+import useHoverModal from '../../hooks/useHoverModal';
+import Search from '../Search/Search';
 
 export default function Navbar() {
   const [
     timeHover,
     arrowHover,
-    datHover,
+    dotHover,
     timeLineHover,
     menuArrowHover,
     menuDotHover,
@@ -26,6 +26,10 @@ export default function Navbar() {
     setSearch(true);
   };
 
+  const closeBtn = () => {
+    setSearch(false);
+  };
+  console.log(search);
   return (
     <div className={styles.container}>
       <div className={styles.timeLineTextWrap}>
@@ -62,8 +66,8 @@ export default function Navbar() {
         <div className={styles.filter}>정렬</div>
         <div className={styles.iconsWrap} onClick={onClickSearch}>
           <AiOutlineSearch className={styles.searchIcon} />
-          {search && <Search setSearch={setSearch} search={search} />}
         </div>
+        <div>{search ? <Search closeBtn={closeBtn} /> : ''}</div>
         <div
           onMouseOver={menuArrowHover}
           onMouseOut={clearArrowHover}
@@ -84,7 +88,7 @@ export default function Navbar() {
           className={styles.iconsWrap}
         >
           <div className={styles.timeLineHoverBox}>
-            {datHover && (
+            {dotHover && (
               <div className={styles.dotHover}>
                 보기 레이아웃, 그룹화 등 편집
               </div>

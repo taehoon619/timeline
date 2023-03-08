@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Cardbox.module.css";
+import styles from "./Cardbox.module.scss";
 
 export default function Cardbox() {
   return (

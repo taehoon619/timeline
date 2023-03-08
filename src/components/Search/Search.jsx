@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
-import styles from "./Search.module.css";
+import styles from "./Search.module.scss";
 
-export default function Search({ search, setSearch }) {
-  const onClickCloseBtn = () => {
-    setSearch(!search);
-  };
+export default function Search({ closeBtn }) {
   return (
     <div className={styles.searchBarContainer}>
       <div className={styles.searchBarWrap}>
@@ -16,9 +13,9 @@ export default function Search({ search, setSearch }) {
             className={styles.search}
           />
           <div
-            onClick={onClickCloseBtn}
+            onClick={closeBtn}
             className={styles.searchBarIcon}
-            // role="button"
+            role="button"
           >
             <AiFillCloseCircle className={styles.searchCloseIcon} />
           </div>

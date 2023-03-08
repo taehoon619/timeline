@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export default function useHoverModal() {
   const [timeHover, setTimeHover] = useState(false);
   const [arrowHover, setArrowHover] = useState(false);
-  const [datHover, setDotHover] = useState(false);
+  const [dotHover, setDotHover] = useState(false);
 
   const timeLineHover = () => {
     setTimeHover(true);
@@ -32,7 +32,7 @@ export default function useHoverModal() {
   return [
     timeHover,
     arrowHover,
-    datHover,
+    dotHover,
     timeLineHover,
     menuArrowHover,
     menuDotHover,
