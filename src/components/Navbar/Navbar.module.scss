@@ -175,6 +175,10 @@
         flex-shrink: 0;
         backface-visibility: hidden;
       }
+      .search_slide {
+        width: 0px;
+        transition: width 1s;
+      }
     }
     .arrowWrap {
       display: block;

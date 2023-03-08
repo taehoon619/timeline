@@ -67,7 +67,9 @@ export default function Navbar() {
         <div className={styles.iconsWrap} onClick={onClickSearch}>
           <AiOutlineSearch className={styles.searchIcon} />
         </div>
-        <div>{search ? <Search closeBtn={closeBtn} /> : ''}</div>
+        <div className="search_slide">
+          {search ? <Search closeBtn={closeBtn} /> : ''}
+        </div>
         <div
           onMouseOver={menuArrowHover}
           onMouseOut={clearArrowHover}
